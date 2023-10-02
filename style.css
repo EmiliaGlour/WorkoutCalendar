@@ -1,0 +1,54 @@
+html {
+  background-color: #1b1b1f;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1f;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 250px auto 20px auto;
+}
+
+.day {
+    width: 100px;
+    height: 100px;
+    text-align: left;
+    padding: 10px;
+    background-color: #23242a;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    color: #000000; /* Default text color (black) */
+}
+
+.day.checked {
+    background-color: #14448f; /* Change the color to your preferred choice */
+    color: #ffffff; /* Text color when checked (white) */
+}
+
+.day:hover {
+    background-color: #14448f; /* Change this color to match the checked color */
+    color: #ffffff; /* Text color on hover (white) */
+}
+
+.day .number {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.day .title {
+    color: #d8e2ff;
+    font-size: 16px;
+  font-weight: bold;
+    text-align: center;
+}
